@@ -4,7 +4,6 @@ export ANDROID_HOME=/opt/android-sdk
 export JAVA_HOME=/opt/jdk1.8.0_74
 export JDK_HOME=/opt/jdk1.8.0_74
 # export GOROOT=/opt/go/
-export GOPATH=/home/lars/workspace-go
 
 # Alias
 alias sd="sudo shutdown -P 60"
