@@ -1,0 +1,14 @@
+[user]
+	email = lrsklpn@live.de
+	name = Lars Kölpin
+[alias]
+	l = log --oneline
+	s = status -s
+	unstage = reset HEAD --
+        glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[credential]
+	helper = cache --timeout 604800
+[core]
+	autocrlf = input
+[help]
+	autocorrect = 1
