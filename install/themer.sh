@@ -17,4 +17,4 @@ create_new_profile() {
 }
 
 # Create profile
-id=$(create_new_profile TEST)
+id=$(create_new_profile THEMER_LKO)
