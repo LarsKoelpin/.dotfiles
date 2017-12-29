@@ -1,3 +1,3 @@
 sudo apt update -y; \
-sudo apt install tmux; \
-sudo apt install curl
+sudo apt install -y tmux; \
+sudo apt install -y curl
