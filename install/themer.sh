@@ -17,6 +17,6 @@ create_new_profile() {
 }
 
 # Create profile
-id=$(create_new_profile THEMER); \
+id=$(create_new_profile THEMER)
 # Execute themer
 sh ~/dotfiles/themer/gen/themer-gnome-terminal/gnome-terminal-dark-install.sh THEMER
