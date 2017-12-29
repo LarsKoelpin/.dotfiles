@@ -18,3 +18,6 @@ create_new_profile() {
 
 # Create profile
 id=$(create_new_profile THEMER_LKO)
+
+# Execute themer
+sh ../themer/gen/themer-gnome-terminal/gnome-terminal-dark-install.sh THEMER_LKO
