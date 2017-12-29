@@ -1,1 +1,2 @@
-sudo apt update; sudo apt install tmux
+sudo apt update; \
+sudo apt install tmux;
