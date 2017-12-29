@@ -16,9 +16,9 @@ if [ ! -d ~/dotfiles ]; then
 fi
 
 sudo apt-get update -y; \
+sh install/tools.sh \
 sh install/nvm.sh; \
 sh install/zsh.sh; \
-sh install/tools.sh \
 sh install/docker.sh \
 sh install/syslinks.sh
 
