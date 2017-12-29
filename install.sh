@@ -8,7 +8,7 @@ echo "     \/                               \/     \/ ";\
 echo "================================================"; \
 
 # Exit if directory is not at /home/dotfiles
-if [ ! -d "~/dotfiles" ]; then
+if [ ! -d ~/dotfiles ]; then
   # Control will enter here if $DIRECTORY exists.
   echo "Dotfiles is not in home directory. Make sure dotfiles exists"
   echo "In /home/USER/"
