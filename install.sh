@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "================================================"; \
 echo "    .___      __    _____.__.__                 "; \
 echo "  __| _/_____/  |__/ ____\__|  |   ____   ______";\
@@ -15,6 +17,7 @@ if [ ! -d ~/dotfiles ]; then
   exit;
 fi
 
+chmod -R 755 .
 sudo apt-get update -y; \
 ./install/tools.sh \
 ./install/nvm.sh; \
