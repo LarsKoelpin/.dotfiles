@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Removing zsh files... (CTRL-C) to exit" ;\
 read INPUT;\
 echo "Removing zsh files..."; \

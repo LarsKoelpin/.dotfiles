@@ -16,9 +16,10 @@ if [ ! -d ~/dotfiles ]; then
 fi
 
 sudo apt-get update -y; \
-sh install/tools.sh \
-sh install/nvm.sh; \
-sh install/zsh.sh; \
-sh install/docker.sh; \
-sh install/syslinks.sh
+./install/tools.sh \
+./install/nvm.sh; \
+./install/zsh.sh; \
+./install/docker.sh; \
+./install/syslinks.sh; \
+./themer/themer.sh
 
