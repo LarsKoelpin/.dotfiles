@@ -137,7 +137,7 @@ main() {
   fi
 }
 
-sudo apt install zsh
+sudo apt install zsh -y
 
 init
 check_optional_args $@
