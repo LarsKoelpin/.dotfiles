@@ -15,7 +15,7 @@ if [ ! -d "~/dotfiles" ]; then
   exit;
 fi
 
-sudo apt-get update; \
+sudo apt-get update -y; \
 sh install/nvm.sh; \
 sh install/zsh.sh; \
 sh install/tools.sh \
