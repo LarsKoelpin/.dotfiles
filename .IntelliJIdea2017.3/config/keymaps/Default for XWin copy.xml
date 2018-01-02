@@ -1,0 +1,5 @@
+<keymap version="1" name="Default for XWin copy" parent="Default for XWin">
+  <action id="CheckinFiles">
+    <keyboard-shortcut first-keystroke="ctrl alt comma" />
+  </action>
+</keymap>

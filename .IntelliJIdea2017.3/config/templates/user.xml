@@ -1,0 +1,18 @@
+<templateSet group="user">
+  <template name="reac" value="export const $REDUCER$_$ACTION_NAME$ = &quot;$REDUCER$/$ACTION_NAME$&quot;;&#10;export function $FUNCTION_NAME$() {&#10;    return {&#10;        type: $REDUCER$_$ACTION_NAME$,&#10;        payload: undefined&#10;    }&#10;}" description="generate Redux action" toReformat="false" toShortenFQNames="true">
+    <variable name="REDUCER" expression="" defaultValue="REDUCER" alwaysStopAt="true" />
+    <variable name="ACTION_NAME" expression="" defaultValue="ACTION" alwaysStopAt="true" />
+    <variable name="FUNCTION_NAME" expression="" defaultValue="sendAction" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="promise" value="new Promise&lt;$TYPE$&gt;((resolve, reject) =&gt; {&#10;&#10;});" description="Primse" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
