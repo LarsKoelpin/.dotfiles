@@ -14,3 +14,6 @@ read INPUT; \
 rm ~/.gitconfig; \
 echo "Creating git symlinks"; \
 ln -s ~/dotfiles/git/.gitconfig ~
+
+echo "Adding idea..."
+ln -s ~/dotfiles/.IntelliJIdea2017.3  ~
