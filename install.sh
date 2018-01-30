@@ -20,9 +20,9 @@ fi
 chmod -R 755 .
 sudo apt-get update -y; \
 ./install/tools.sh \
-./install/nvm.sh; \
 ./install/zsh.sh; \
 ./install/docker.sh; \
 ./install/syslinks.sh; \
+./install/nvm.sh; \
 ./themer/themer.sh
 
