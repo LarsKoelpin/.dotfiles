@@ -1,3 +1,6 @@
 #!/bin/bash
-curl -fsSL get.docker.com -o get-docker.sh
-sh get-docker.sh > /dev/null
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu artful stable"
+sudo apt update
+sudo apt install docker-ce
