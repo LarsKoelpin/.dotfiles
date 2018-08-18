@@ -1,13 +1,30 @@
+# Add vim bindinds
+bindkey -v
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 export ANDROID_HOME=/opt/android-sdk
-export JAVA_HOME=/opt/jdk1.8.0_74
-export JDK_HOME=/opt/jdk1.8.0_74
+export JAVA_HOME=/opt/jdk1.8.0_171/
+export JDK_HOME=/opt/jdk1.8.0_171/
 # export GOROOT=/opt/go/
 
 # Alias
 alias sd="sudo shutdown -P 60"
 alias upgrade="sudo apt-get update -y; sudo apt-get upgrade -y"
+#1080*1.35=1458
+#1920*1.35=2592
+#2560*1.35= 3456
+#1440*1.35 = 1944
+#2898
+#PANE SIZE  = 3456 + 2592 = 6048
+#Pane VSIZE = 1944 + 1458 
+#POS 1 = 0x0
+#POS 2 = 2592x0
+#fb = 6048x3402
+#xrandr --output eDP-1 --auto --pos 2592x0 --output HDMI-1 --scale 1.35x1.35 --auto --pos 0x0 --fb 6048x3402
+
+
+alias external="xrandr --output eDP-1 --auto --pos 0x0 --output HDMI-1 --scale 1.35x1.35 --auto --pos 3456x0 --fb 6048x3402"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -92,6 +109,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH=$PATH:~/.local/bin
+export PATH=$PATH:/opt/jdk1.8.0_171/bin
+export PATH=$PATH:/home/lars/.node/node-v8.11.3-linux-x64/bin
+export PATH=$PATH:/opt/terraform
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`

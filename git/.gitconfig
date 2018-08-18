@@ -1,6 +1,6 @@
 [user]
 	email = lrsklpn@live.de
-	name = Lars Kölpin
+	name = Lars
 [alias]
 	l = log --oneline
 	s = status -s
