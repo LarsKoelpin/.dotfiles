@@ -208,7 +208,7 @@ bindsym XF86AudioPrev exec playerctl previous
 exec /usr/bin/gnome-settings-daemon
 # gsettings set org.gnome.desktop.interface scaling-factor 2
 
-bindsym $mod+Shift+l exec i3lock
+bindsym $mod+Shift+l exec "cat ~/dotfiles/i3/lock.sh | bash"
 
 assign [class="Google-chrome"] $workspace3
 
