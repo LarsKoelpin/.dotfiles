@@ -1,9 +1,0 @@
-<toolSet name="External Tools">
-  <tool name="prettier" description="format" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="npm" />
-      <option name="PARAMETERS" value="run format" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/hot/MiPro/springboot-webapplication" />
-    </exec>
-  </tool>
-</toolSet>
