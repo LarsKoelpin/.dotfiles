@@ -10,5 +10,6 @@
 	helper = cache --timeout 604800
 [core]
 	autocrlf = input
+	editor = "vim"
 [help]
 	autocorrect = 1
