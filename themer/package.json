@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"build": "themer -c themer-colors-default -t themer-gnome-terminal -o gen",
-"test": "echo \"Error: no test specified\" && exit 1"
+    "build-terminal": "themer -c themer-colors-default -t themer-gnome-terminal -o gen",
+    "build-idea": "themer -c themer-colors-default -t themer-jetbrains -o gen",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "themer": "^2.2.3",
     "themer-colors-default": "^1.0.5",
     "themer-gnome-terminal": "^1.0.1",
+    "themer-jetbrains": "^1.0.1",
     "themer-vim": "^2.2.7"
   }
 }
