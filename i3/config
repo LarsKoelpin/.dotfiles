@@ -185,6 +185,7 @@ bar {
 	  inactive_workspace      $inactive-bg-color $inactive-bg-color $text-color
    	  urgent_workspace        $urgent-bg-color   $urgent-bg-color   $text-color
 	}
+	separator_symbol " "
 }
 
 # Pulse Audio controls
