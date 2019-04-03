@@ -1,5 +1,6 @@
                                                                     
 
+export PATH=$PATH:~/.bin
 export NVM_DIR="/home/lars/.nvm" 
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
