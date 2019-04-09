@@ -4,8 +4,8 @@ bindkey -v
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 export ANDROID_HOME=/opt/android-sdk
-export JAVA_HOME=/opt/jdk1.8.0_171/
-export JDK_HOME=/opt/jdk1.8.0_171/
+export JAVA_HOME=/opt/jdk11
+export JDK_HOME=/opt/jdk11
 # export GOROOT=/opt/go/
 
 # Alias

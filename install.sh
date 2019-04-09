@@ -17,7 +17,8 @@ if [ ! -d ~/dotfiles ]; then
   exit;
 fi
 
-chmod -R 755 .
+chmod -R 755 .; \
+touch ~/.screenlayout/scaling.sh; \
 sudo apt-get update -y; \
 ./install/tools.sh \
 ./install/zsh.sh; \

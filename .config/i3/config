@@ -1,4 +1,6 @@
 set $mod Mod4
+
+exec ~/.screenlayout/scaling.sh
 bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -i -nb '#222222' -sf '#eeeeee' -sb '#26c99e' -nf '#bbbbbb' -fn 'Roboto'"
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -190,7 +192,7 @@ bindsym Shift+Control+Print exec "main -s | xclip -selection clipboard -t image/
 exec --no-startup-id compton 
 exec --no-startup-id "redshift -l 53.144050:8.191570"
 
-exec_always feh --bg-scale /home/lars/Pictures/hipster.jpg 
+exec_always feh --bg-scale /home/lars/Pictures/ubuntu.png
 
 
 mode "$mode_system" {
