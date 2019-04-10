@@ -34,14 +34,25 @@ bindsym $mod+Return exec "xfce4-terminal --hide-menubar --hide-borders"
 bindsym $mod+Shift+q kill
 
 # ThemingA
-set $inactive-bg-color #2f343f
-set $inactive-text-color #676E7D
+set $inactive-bg-color #131230 
+set $inactive-text-color #afadeb
 set $urgent-bg-color #E53935
 set $focused-bg #00FFFF
 set $focused-text #2f2f2f
-set $bg-color #2f343f
+set $bg-color #828fab 
 set $text-color #f3f4f5
 set $htext-color #9575cd
+
+set $polar-night-1 #2e3340
+set $polar-night-2 #3b4252
+set $polar-night-3 #434c5e
+set $polar-night-4 #4c566a
+
+set $snow-storm-1 #d8dee9
+set $snow-storm-2 #e5e9f0
+set $snow-storm-3 #eceff4
+
+set $frost-1 #8fbcbb
 
 # Window colors
 #                         border                 background         text                 indicator

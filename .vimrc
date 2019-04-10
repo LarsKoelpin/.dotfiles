@@ -1,7 +1,15 @@
+" Active syntax highligting for i3 config "
+aug i3config_ft_detection
+  au!
+  au BufNewFile,BufRead ~/dotfiles/.config/i3/config set filetype=i3config
+aug end
+
+
 " Use the Solarized Dark theme
 set background=dark
 colorscheme solarized
 let g:solarized_termtrans=1
+let g:colorizer_auto_filetype='i3config'
 
 " Make Vim more useful
 set nocompatible

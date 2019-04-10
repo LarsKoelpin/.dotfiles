@@ -5,3 +5,4 @@ node_modules
 .IntelliJIdea2017.3/config/options
 .IntelliJIdea2017.3/config/*.key
 .netrwhist
+.vim/swaps
