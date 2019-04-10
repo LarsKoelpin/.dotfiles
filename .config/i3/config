@@ -162,6 +162,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 exec_always --no-startup-id "~/.bin/start-polybar"
+exec --no-startup-id "~/.bin/start-redshift"
 
 # ALSA Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+ # increase
@@ -190,10 +191,8 @@ bindsym $mod+Shift+t exec "maim -s ~/Pictures/deleteme-$(date +%s).png"
 bindsym Shift+Control+Print exec "main -s | xclip -selection clipboard -t image/png"
 
 exec --no-startup-id compton 
-exec --no-startup-id "redshift -l 53.144050:8.191570"
 
-exec_always feh --bg-scale /home/lars/Pictures/ubuntu.png
-
+exec_always feh -Y -x -q -D 5 -r -z --bg-scale  /home/lars/Pictures/Arctic
 
 mode "$mode_system" {
     bindsym l exec --no-startup-id lock, mode "default"
