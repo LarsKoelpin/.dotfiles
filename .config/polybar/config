@@ -4,7 +4,7 @@ width = 100%
 height = 35
 
 tray-position = right
-background = #FF292929 
+background = #FF2e3340 
 # background = #bd0b1015
 #foreground = #FF000000
 foreground = #CCffffff
@@ -166,9 +166,11 @@ label-mode-background = #e60053
 ;   %output%
 ; Default: %icon%  %name%
 label-focused = %index% 
-label-focused-foreground = #26c99e
+label-focused-foreground = #88c0d0 
+;frost-2
 label-focused-background = #232323
-label-focused-underline = #26c99e
+;frost-2
+label-focused-underline = #88c0d0 
 label-focused-padding = 6
 
 ; Available tokens:
@@ -198,7 +200,7 @@ label-visible-padding = 6
 ; Default: %icon%  %name%
 label-urgent = %index%
 label-urgent-foreground = #000000
-label-urgent-background = #bd2c40
+label-urgent-background = #bf616a %aurora-1
 label-urgent-padding = 6
 
 ; Separator in between workspaces

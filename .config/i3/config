@@ -33,16 +33,6 @@ bindsym $mod+Return exec "xfce4-terminal --hide-menubar --hide-borders"
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# ThemingA
-set $inactive-bg-color #131230 
-set $inactive-text-color #afadeb
-set $urgent-bg-color #E53935
-set $focused-bg #00FFFF
-set $focused-text #2f2f2f
-set $bg-color #828fab 
-set $text-color #f3f4f5
-set $htext-color #9575cd
-
 set $polar-night-1 #2e3340
 set $polar-night-2 #3b4252
 set $polar-night-3 #434c5e
@@ -53,13 +43,22 @@ set $snow-storm-2 #e5e9f0
 set $snow-storm-3 #eceff4
 
 set $frost-1 #8fbcbb
+set $forst-2 #88c0d0
+set $frost-3 #81a1c1
+set $frist-4 #5e81ac
+
+set $aurora-1 #bf616a
+set $aurora-2 #d08770
+set $aurora-3 #ebcb8b
+set $aurora-4 #a3be8c
+set $aurora-5 #b48ead
 
 # Window colors
 #                         border                 background         text                 indicator
-client.focused            $bg-color              $bg-color          $text-color          #00ff00  
-client.unfocused          $inactive-bg-color     $inactive-bg-color $inactive-text-color  #00FF00
-client.focused_inactive   $inactive-bg-color     $inactive-bg-color $inactive-text-color   #00ff00
-client.urgent             $urgent-bg-color       $urgent-bg-color   $text-color          #00FF0          #00FF00
+client.focused            $frost-1               $frost-1            #FFFFFF      $aurora-4 
+client.unfocused          $polar-night-4         $polar-night-4      $snow-storm-4       $aurora-4
+client.focused_inactive   $polar-night-4         $polar-night-4      $snow-storm-1       $aurora-4
+client.urgent             $aurora-1              $aurora-1           $text-color         $aurora-4
 client.background #FF00FF
 
 # alternatively, you can use the cursor keys:
