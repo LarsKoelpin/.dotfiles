@@ -1,6 +1,5 @@
 set $mod Mod4
 
-exec ~/.screenlayout/scaling.sh
 bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -i -nb '#222222' -sf '#eeeeee' -sb '#26c99e' -nf '#bbbbbb' -fn 'Roboto'"
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -159,6 +158,8 @@ exec_always --no-startup-id "~/.bin/start-polybar"
 exec_always feh -Y -x -q -D 5 -r -z --bg-scale  /home/lars/Pictures/Arctic
 exec --no-startup-id nm-applet
 exec --no-startup-id compton 
+
+exec --no-startup-id ~/.screenlayout/scaling.sh
 
 
 # ALSA Audio controls

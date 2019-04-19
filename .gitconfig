@@ -12,4 +12,6 @@
 	autocrlf = input
 	editor = "vim"
 [help]
-	autocorrect = 1
+				autocorrect = 1
+[include]
+  path = .gitalias
