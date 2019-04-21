@@ -1055,10 +1055,12 @@
   # Customize this alias as you like for your own workflow.
   ##
 
-  topic-stop = "!f(){ \
-    git topic-push; \
-    git topic-delete; \
+  topic-finish = "!f(){ \
+    git pull --rebase origin master; \
+    git topic-push;  \
+		git topic-delete-local; \
   };f"
+
 
   ### CREATE & DELETE ###
 
@@ -1125,6 +1127,13 @@
       git branch --delete \"$topic_branch\"; \
       git push origin \":$topic_branch\"; \
     fi; \
+  };f"
+
+  topic-delete-local = "!f() { \
+		topic_branch=$(git branch-name); \
+    base_branch=$(git topic-base-branch-name); \
+    git checkout  \"$base_branch\"; \
+    git branch -D \"$topic_branch\"; \
   };f"
 
 
