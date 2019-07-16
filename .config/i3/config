@@ -155,11 +155,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 exec_always --no-startup-id "~/.bin/start-polybar"
-exec_always feh -Y -x -q -D 5 -r -z --bg-scale  /home/lars/Pictures/Arctic
+exec_always feh -Y -x -q -D 5 -r -z --bg-scale  /home/lars/Pictures/Wallpapers
 exec --no-startup-id nm-applet
 exec --no-startup-id compton 
 
-exec --no-startup-id ~/.screenlayout/scaling.sh
+exec_always --no-startup-id "cat /home/lars/.screenlayout/scaling.sh | bash"
 
 
 # ALSA Audio controls
@@ -180,7 +180,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 bindsym $mod+Shift+l exec "~/.bin/lock"
 
-assign [class="Google-chrome"] $workspace3
+# assign [class="Google-chrome"] $workspace3
 
 bindsym Shift+Print exec "maim -s | xclip -selection clipboard -t image/png"
 bindsym $mod+Shift+t exec "maim -s ~/Pictures/deleteme-$(date +%s).png"
