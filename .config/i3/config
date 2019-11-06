@@ -5,6 +5,7 @@ for_window [window_role="task_dialog"] floating enable
 bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -i -nb '#222222' -sf '#eeeeee' -sb '#26c99e' -nf '#bbbbbb' -fn 'Roboto'"
 
 exec --no-startup-id wmctrl -c Plasma
+mouse_warping none
 for_window [title="Desktop — Plasma"]   kill, floating enable, border none
 
 # Avoid tiling popups, dropdown windows from plasma.
@@ -16,7 +17,9 @@ for_window [class="Plasmoidviewer"]     floating enable, border none
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Roboto 11
+font pango:Roboto:style=Regular 13
+#for_window [class=".*"] title_format "<span size="smaller">%title</span>"
+#for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class=".*"] title_format "  %title"
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -34,7 +37,7 @@ for_window [class=".*"] title_format "  %title"
 # gaps inner 3
 # gaps outer 3
 # smart_gaps on
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 
 floating_modifier $mod
 
@@ -120,6 +123,8 @@ set $workspace1 1
 set $workspace2 2
 set $workspace3 3
 set $workspace4 4
+
+workspace_layout stacking
 
 workspace 5 output HDMI-1
 workspace 6 output HDMI-1
