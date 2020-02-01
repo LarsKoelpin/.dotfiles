@@ -4,3 +4,4 @@
 --override=.*
 --ignore=install
 --ignore=install.sh
+--ignore=etc
